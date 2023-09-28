@@ -1,41 +1,13 @@
-ul {
-    list-style-type: none;
+.kb-account-nav {
+
 }
 
-.kb-sidebar {
-    border-width: 200px;
-    border-color: red;
-    color: black
-}
-
-.kb-icon {
-    color: red;
-    margin: 5px
-}
-
-.kb-profile-icon {
-    color: gray
-}
-
-.kb-nav-li {
-    width: 75px;
-    height: 75px;
-    background-color: black;
-    border-color: black;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: small;
-    margin: 5px;
-}
-
-.kb-selected-link {
-    background-color: white;
-}
-
-.kb-selected-link-text {
+a {
     color: red
 }
 
-.kb-unselected-link-text {
-    color: white
+.kb-link-selected {
+    color: black;
+    border-left: 10px;
+    border-left-color: black;
 }
