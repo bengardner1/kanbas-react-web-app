@@ -34,7 +34,7 @@ a {
     padding-bottom: 10px;
 }
 
-.kb-vertical-padding h3, h4 {
+.kb-vertical-padding h2, h3, h4 {
     text-decoration: none;
     font-weight: normal;
 }
@@ -51,8 +51,17 @@ body {
 
 .kb-no-left-padding {
     padding-left: none;
+    padding-inline-start: 0px;
 }
 
 .col-1 {
     width: 100px
+}
+
+select {
+    max-width: 150px;
+}
+
+.kb-arrow {
+    padding-left: 50px;
 }
