@@ -1,13 +1,58 @@
-.kb-account-nav {
-
+.kb-list {
+    list-style: none;
 }
 
 a {
-    color: red
+    color: red;
+    text-decoration: none;
+    padding: 4px;
 }
 
-.kb-link-selected {
-    color: black;
-    border-left: 10px;
+.kb-active {
+    border-left: 1px solid;
     border-left-color: black;
+}
+
+.kb-active a {
+    color: black;
+    padding: 4px;
+}
+
+.kb-profile-sidebar {
+    width: 195px;
+    padding-inline-start: 0px;
+}
+
+.kb-profile-sidebar li {
+    padding: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+}
+
+.kb-vertical-padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.kb-vertical-padding h3, h4 {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+
+body {
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-inline-start: 0px;
+}
+
+.kb-icon-padded {
+    padding: 10px
+}
+
+.kb-no-left-padding {
+    padding-left: none;
+}
+
+.col-1 {
+    width: 100px
 }
