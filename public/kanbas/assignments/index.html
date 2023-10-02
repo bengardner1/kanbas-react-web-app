@@ -3,32 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../../vendors/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../index.css" rel="stylesheet"/>
     <title>Document</title>
 </head>
 <body>
-    <table border="0" width="100%">
-        <tbody>
-            <trow>
-                <td valign="top"> 
-                    <ul>
-                        <li><a href = "../profile/index.html">Account</a></li>
-                        <li><a href = "#">Dashboard</a></li>
-                        <li><a href = "../home.html">Courses</a></li>
-                        <li><a href = "#">Calendar</a></li>
-                        <li><a href = "#">Inbox</a></li>
-                        <li><a href = "#">History</a></li>
-                        <li><a href = "#">Studio</a></li>
-                        <li><a href = "#">Commons</a></li>
-                        <li><a href = "#">Help</a></li>         
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul>
-                        <li><a href = "../home.html">Home</a></li>
+    <div class="row">
+        <div class="col-1 col-xs-1 d-none d-lg-block"> 
+            <ul class = "kb-black-sidebar pt-2">
+                <div> <img src="../../northeastern logo.png" width="75px"></div>
+                <div><li><a href = "../profile/index.html"><i class="fa fa-solid fa-user kb-profile-icon fa-2x">
+                    </i><br>Account</a></li> </div>
+                <div><li><a href = "../dashboard/index.html"><i class="fa fa-solid fa-weight fa-2x kb-icon"></i><br><span class = "kb-selected-link-text">Dashboard</span></a></li></div>
+                <div class="kb-selected-link"><li><a href = "../course_home/home.html"><i class="fa fa-solid fa-book fa-2x kb-icon"></i><br>Courses</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-regular fa-calendar fa-2x kb-icon"></i><br>Calendar</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-print fa-2x kb-icon"></i><br>Inbox</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-clock fa-2x kb-icon"></i><br>History</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-play-circle fa-2x kb-icon"></i><br>Studio</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-copyright fa-2x kb-icon"></i><br>Commons</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-question-circle fa-2x kb-icon"></i><br>Help</a></li></div>         
+            </ul>
+        </div>
+        <div class="col-11">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="home.html">CS4550 Fall 2023 Section 1</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                </ol>
+                <!-- <div class="float-end">
+                    <button type="button" class="btn kb-button-grey"><i class="fa fa-solid fa-glasses"></i>  Student View</button>
+                  </div> -->
+              </nav>
+              <br>
+            <div class="row">
+                <div class="col-1 kb-small-left-padding kb-padding-right d-none d-lg-block">
+                    <ul class="kb-sidebar">
+                        <li><a href = "../course_home/home.html">Home</a></li>
                         <li><a href = "#">Modules</a></li>
                         <li><a href = "#">Piazza</a></li>
                         <li><a href = "#">Zoom Meetings</a></li>
-                        <li><a href = "index.html">Assignments</a></li>
+                        <li><a href = "../assignments/index.html"  class="kb-active">Assignments</a></li>
                         <li><a href = "#">Quizzes</a></li>
                         <li><a href = "../grades_page/grades.html">Grades</a></li>
                         <li><a href = "#">People</a></li>
@@ -43,96 +58,109 @@
                         <li><a href = "#">Syllabus</a></li>
                         <li><a href = "#">Settings</a></li>
                     </ul>
-                </td>
-                <td valign="top">
-                    <input type = "text" placeholder= "Search for Assignments"/>
-                    <button type="button">Group</button>
-                    <button type="button">Assignment</button>
-                    <select><option value = "Edit Assignment Dates">Edit Assignment Dates</option></select>
+                    </div>
+                <div class="col-10">
+                    <input type = "text" placeholder= "Search for Assignments" class="w-25 form-control d-inline"/>
+                    <div class="float-end">
+                        <button type="button" class="btn kb-button-grey">+Group</button>
+                        <button type="button" class="btn btn-danger">+Assignment</button>
+                        <button type="button" class="btn kb-button-grey">
+                            <i class="fa fa-solid fa-ellipsis-v"></i>
+                        </button>
+                    </div>
                     <hr/>
-                    <h3>ASSIGNMENTS 40% of Total</h3> 
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move to...</option>
-                        <option>Send to...</option>
-                        <option>Copy to...</option>
-                        <option>Share to Commons</option>
-                    </select>
-                    <ul>
-                        <li><a href = "edit.html">A1 - ENV + HTML</a></br>
+                    <ul class="list-group">
+                        <li class="list-group-item p-0">
+                        <h3 class="p-3 list-group-item-secondary">Assignments</h3> 
+                        <select>
+                            <option>Edit</option>
+                            <option>Speed Grader</option>
+                            <option>Duplicate</option>
+                            <option>Delete</option>
+                            <option>Move to...</option>
+                            <option>Send to...</option>
+                            <option>Copy to...</option>
+                            <option>Share to Commons</option>
+                        </select>
+                        <ul class="list-group ">
+                            <li class = "list-group-item"><a href = "edit.html">A1 - ENV + HTML</a></br>
+                                <a href="#">Multiple Modules</a> | Not available yet</li>
+                            <li class = "list-group-item"><a href = "edit.html">A2 - CSS + BOOTSTRAP</a> </br>
+                                <a href="#">Multiple Modules</a> | Not available yet</li>
+                            <li class = "list-group-item"><a href = "edit.html">A3 - JS + REACT</a> </br>
+                                <a href="#">Multiple Modules</a> | Not available yet</li>
+                            <li class = "list-group-item"><a href = "edit.html">A4 - STATE + REDUX</a> </br>
+                                <a href="#">Multiple Modules</a> | Not available yet</li>
+                            <li class = "list-group-item"><a href = "edit.html">A5 - NODE + SESSION</a> </br>
+                                <a href="#">Multiple Modules</a> | Not available yet</li>
+                            <li class = "list-group-item"><a href = "edit.html">A6 - MONGO + MONGOOSE</a> </br>
                             <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">A2 - CSS + BOOTSTRAP</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">A3 - JS + REACT</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">A4 - STATE + REDUX</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">A5 - NODE + SESSION</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">A6 - MONGO + MONGOOSE</a> </br>
-                        <a href="#">Multiple Modules</a> | Not available yet</li>
+                        </ul>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <h3>Quizzes</h3> 
+                            <select>
+                                <option>Edit</option>
+                                <option>Speed Grader</option>
+                                <option>Duplicate</option>
+                                <option>Delete</option>
+                                <option>Move to...</option>
+                                <option>Send to...</option>
+                                <option>Copy to...</option>
+                                <option>Share to Commons</option>
+                            </select>
+                            <ul>
+                                <li class = "list-group-item"><a href = "edit.html">Q1 - HTML</a> </br>
+                                <a href="#">Multiple Modules</a> | Not available yet</li>
+                                <li class = "list-group-item"><a href = "edit.html">Q2 - CSS</a> </br>
+                                    <a href="#">Multiple Modules</a> | Not available yet</li>
+                                <li class = "list-group-item"><a href = "edit.html">Q3 - JS, ES6</a> </br>
+                                    <a href="#">Multiple Modules</a> | Not available yet</li>
+                                <li class = "list-group-item"><a href = "edit.html">Q4 - NODE</a> </br>
+                                    <a href="#">Multiple Modules</a> | Not available yet</li>
+                                <li class = "list-group-item"><a href = "edit.html">Q5 - MONGO</a> </br>
+                                    <a href="#">Multiple Modules</a> | Not available yet</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <h3>Exams</h3> 
+                            <select>
+                                <option>Edit</option>
+                                <option>Speed Grader</option>
+                                <option>Duplicate</option>
+                                <option>Delete</option>
+                                <option>Move to...</option>
+                                <option>Send to...</option>
+                                <option>Copy to...</option>
+                                <option>Share to Commons</option>
+                            </select>
+                            <ul>
+                                <li class = "list-group-item"><a href = "edit.html">Midtern</a> </br>
+                                    <a href="#">Multiple Modules</a> | Not available yet</li>
+                                <li class = "list-group-item"><a href = "edit.html">Final</a> </br>
+                                    <a href="#">Multiple Modules</a> | Not available yet</li>
+                            </ul>
+                            <h3>Projects</h3> 
+                            <select>
+                                <option>Edit</option>
+                                <option>Speed Grader</option>
+                                <option>Duplicate</option>
+                                <option>Delete</option>
+                                <option>Move to...</option>
+                                <option>Send to...</option>
+                                <option>Copy to...</option>
+                                <option>Share to Commons</option>
+                            </select>
+                            <ul>
+                                <li class = "list-group-item"><a href = "edit.html">Project</a> </br> 
+                                    <a href="#">Multiple Modules</a> | Not available yet</li>
+                            </ul>
+                        </li>
                     </ul>
-                    <h3>QUIZZES 10% of Total</h3> 
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move to...</option>
-                        <option>Send to...</option>
-                        <option>Copy to...</option>
-                        <option>Share to Commons</option>
-                    </select>
-                    <ul>
-                        <li><a href = "edit.html">Q1 - HTML</a> </br>
-                        <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">Q2 - CSS</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">Q3 - JS, ES6</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">Q4 - NODE</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">Q5 - MONGO</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                    </ul>
-                    <h3>EXAMS 20% of Total</h3> 
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move to...</option>
-                        <option>Send to...</option>
-                        <option>Copy to...</option>
-                        <option>Share to Commons</option>
-                    </select>
-                    <ul>
-                        <li><a href = "edit.html">Midtern</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">Final</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                    </ul>
-                    <h3>PROJECTS 30% of Total</h3> 
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move to...</option>
-                        <option>Send to...</option>
-                        <option>Copy to...</option>
-                        <option>Share to Commons</option>
-                    </select>
-                    <ul>
-                        <li><a href = "edit.html">Project</a> </br> 
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                    </ul>
-                </td>
-            </trow>
-        </tbody>
-    </table>
+                </div>
+            </div>
+    </div>
+    </div>
+
 </body>
 </html>
