@@ -217,6 +217,7 @@ ul {
     display: inline;
 }
 
-.list-group {
-    
+.kb-small-button {
+    max-width: 100px;
+    height: 100px;
 }
