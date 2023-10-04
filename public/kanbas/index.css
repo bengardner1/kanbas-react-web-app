@@ -169,6 +169,10 @@ ul {
     height: 100%;
 }
 
+.kb-black-sidebar i {
+    margin-top: 10px;
+}
+
 .kb-icon {
     color: red;
     margin: 7px;
