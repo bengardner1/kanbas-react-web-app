@@ -3,34 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../../vendors/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../index.css" rel="stylesheet"/>
     <title>Document</title>
 </head>
 <body>
-    <table border="0" width="100%">
-        <tbody>
-            <trow>
-                <td valign="top"> 
-                    <ul>
-                        <li><a href = "../profile/index.html">Account</a></li>
-                        <li><a href = "#">Dashboard</a></li>
-                        <li><a href = "../course_home/home.html">Courses</a></li>
-                        <li><a href = "#">Calendar</a></li>
-                        <li><a href = "#">Inbox</a></li>
-                        <li><a href = "#">History</a></li>
-                        <li><a href = "#">Studio</a></li>
-                        <li><a href = "#">Commons</a></li>
-                        <li><a href = "#">Help</a></li>         
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul>
+    <div class="row">
+        <div class="col-12 col-md-1 d-none d-xl-block kb-80-px-wide"> 
+            <ul class = "kb-black-sidebar pt-2">
+                <div> <img src="../../northeastern logo.png" width="75px"></div>
+                <div><li><a href = "../profile/index.html"><i class="fa fa-solid fa-user kb-profile-icon fa-2x">
+                    </i><br>Account</a></li> </div>
+                <div><li><a href = "../dashboard/index.html"><i class="fa fa-solid fa-weight fa-2x kb-icon"></i><br><span class = "kb-selected-link-text">Dashboard</span></a></li></div>
+                <div class="kb-selected-link"><li><a href = "../course_home/home.html"><i class="fa fa-solid fa-book fa-2x kb-icon"></i><br>Courses</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-regular fa-calendar fa-2x kb-icon"></i><br>Calendar</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-print fa-2x kb-icon"></i><br>Inbox</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-clock fa-2x kb-icon"></i><br>History</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-play-circle fa-2x kb-icon"></i><br>Studio</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-copyright fa-2x kb-icon"></i><br>Commons</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-question-circle fa-2x kb-icon"></i><br>Help</a></li></div>         
+            </ul>
+        </div>
+        <div class="col-12 col-md-11 ms-4">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="home.html">CS4550 Fall 2023 Section 1</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                </ol>
+                </nav>
+            <div class="row">
+                <div class="col-1 kb-small-left-padding kb-padding-right d-none d-lg-block">
+                    <ul class="kb-sidebar">
                         <li><a href = "../course_home/home.html">Home</a></li>
                         <li><a href = "#">Modules</a></li>
                         <li><a href = "#">Piazza</a></li>
                         <li><a href = "#">Zoom Meetings</a></li>
                         <li><a href = "../assignments/index.html">Assignments</a></li>
                         <li><a href = "#">Quizzes</a></li>
-                        <li><a href = "../grades_page/grades.html">Grades</a></li>
+                        <li><a href = "../grades_page/grades.html" class="kb-active">Grades</a></li>
                         <li><a href = "#">People</a></li>
                         <li><a href = "#">Panopto Video</a></li>
                         <li><a href = "#">Discussions</a></li>
@@ -43,31 +54,69 @@
                         <li><a href = "#">Syllabus</a></li>
                         <li><a href = "#">Settings</a></li>
                     </ul>
-                </td>
-                <td valign="top">
-                    <select><option value = "Gradebook">Gradebook</option></select>
-                    <button type = "button">Import</button>
-                    <select><option value = "Gradebook">Export</option></select>
-                    <button type = "button">Configure</button>
-                    </br>
-                    <h4>Student Names</h4> 
-                    <input type = "text" placeholder="Search Students"/>
-                    <h4>Assignment Names</h4>
-                    <input type = "text" placeholder="Search Assignments"/> </br> </br>
-                    <button type ="button">Apply Filters</button>
-                    <table border = "1" width = "100%">
+                    </div>
+                <div class="col-10">
+                    <div class="float-end">
+                    <button type = "button" class="btn kb-button-grey">
+                        <i class="fa fa-solid fa-file-alt"></i>  Import</button>
+                    <button type="button" class= "btn kb-button-grey"><i class="fa fa-solid fa-file-alt"></i>
+                        <select class ="kb-button-grey border-0"><option value = "Gradebook">
+                        Export</option></select></button>
+                    <button type = "button" class="btn kb-button-grey"><i class="fa fa-solid fa-sun"></i></button>
+                </div>
+                    </br><br>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>Student Names</h5> 
+                            <div class="form-group border">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                            <i class="fa fa-solid fa-search p-2 pt-2 text-secondary"></i>
+                                    </div>
+                                    <input type="text" class="form-control border-0" placeholder="Search Students">
+                                    <div class="float-end">
+                                        <button class="btn btn-secondary dropdown-toggle kb-grey-list-item text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <!-- Display the arrow icon here -->
+                                        <span class="custom-caret"></span>
+                                    </button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h5>Assignment Names</h5>
+                            <div class="form-group border">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                            <i class="fa fa-solid fa-search p-2 pt-2 text-secondary"></i>
+                                    </div>
+                                    <input type="text" class="form-control border-0" placeholder="Search Assignments">
+                                    <div class="float-end">
+                                        <button class="btn btn-secondary dropdown-toggle kb-grey-list-item text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <!-- Display the arrow icon here -->
+                                        <span class="custom-caret"></span>
+                                    </button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   </br> 
+                    <button type ="button" class="btn kb-button-grey mb-4">
+                        <i class="fa fa-filter"></i>   Apply Filters</button>
+                    <div class = "table-responsive">
+                    <table class="table table-striped table-hover table-bordered">
                         <thead>
                             <tr>
-                                <th>Student Name</th>
-                                <th>A0: Setup </br> Out of 100 </th>
-                                <th>A1: Drain Gang Basics </br> Out of 100</th>
-                                <th>A2: Gluee and Eversince </br> Out of 100</th>
-                                <th>A3: WOD and AvP </br> Out of 100</th>
+                                <th scope="col"><strong>Name</strong></th>
+                                <th scope="col">A0: Setup </br> Out of 100 </th>
+                                <th scope="col">A1: Drain Gang Basics </br> Out of 100</th>
+                                <th scope="col">A2: Gluee and Eversince </br> Out of 100</th>
+                                <th scope="col">A3: WOD and AvP </br> Out of 100</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Benjamin Reichwald</td>
+                                <td scope="row">Benjamin Reichwald</td>
                                 <td><input type = "number" placeholder = 9 value = 9 /> </td>
                                 <td>333</td>
                                 <td>100</td>
@@ -94,11 +143,19 @@
                                 <td>100</td>
                                 <td><input type = "number" placeholder = 9 value = 66 /> </td>
                             </tr>
+                            <tr>
+                                <td>Ellie Feldman</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                            </tr>
                         </tbody>
                     </table>
-                </td>
-            </trow>
-        </tbody>
-    </table>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -11,6 +11,7 @@ a {
 .kb-active {
     border-left: 2px solid;
     border-left-color: black;
+    color: black;
 }
 
 .kb-active a {
@@ -59,7 +60,7 @@ body {
     width: 100px
 }
 
-select {
+.kb-select {
     max-width: 150px;
 }
 
@@ -95,8 +96,16 @@ select {
     height: 100vh;
 }
 
+.custom-caret::before {
+    border-top: 0.3em solid black; /* Set caret color to black */
+}
+
 .kb-text-grey {
     color: lightgray
+}
+
+.kb-background-grey {
+    background-color: lightgray;
 }
 
 .kb-no-left-margin {
@@ -220,4 +229,63 @@ ul {
 .kb-small-button {
     max-width: 100px;
     height: 100px;
+}
+
+.list-group {
+    border-radius: 0px;
+}
+
+.list-group-item {
+    border-radius: 0px;
+}
+
+.kb-rounded-corners {
+    border-radius: 50px;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 70% !important
+}
+
+h4 p {
+    font-size: 70% !important
+}
+
+th {
+    font-weight: normal;
+}
+
+.kb-box-5 {
+    width:5%;
+    display: inline-block
+}
+
+.kb-box-90 {
+    width:89%;
+    display: inline-block
+}
+
+.kb-light-green {
+    color: #28a745;
+}
+
+.kb-green-left-border {
+    border-left: 3px solid #28a745;
+}
+
+.kb-fat-padding-r {
+    padding-right: 200px;
+}
+
+.inline-label-input {
+    display: inline-block;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.kb-thin-black-border-rounded {
+    border:1px solid lightgray;
+    border-radius: 10px;
+}
+
+.kb-80-px-wide {
+    width: 80px
 }
