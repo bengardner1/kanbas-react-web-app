@@ -10,8 +10,23 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="row d-block d-md-block d-lg-none bg-dark">
+        <div class="col-12">
+            <a href="../kanbas_navigation/KanbasNavSmall.html" class="d-inline">
+            <button type="button" class="btn text-white ms-2">
+                <i class="fa fa-solid fa-bars"></i>
+            </button></a>
+            <div class="float-end">
+                <a href="../course_navigation/CourseNavSmall.html" class="d-inline">
+                    <button type="button" class="btn text-white ms-2">
+                        <i class="fa fa-solid fa-chevron-up"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="row">
-        <div class="col-1"> 
+        <div class="col-12 col-md-1 d-none d-xl-block kb-80-px-wide"> 
             <ul class = "kb-black-sidebar pt-2">
                 <div> <img src="../../northeastern logo.png" width="75px"></div>
                 <div class="kb-selected-link "><li><a href = "../profile/index.html"><i class="fa fa-solid fa-user kb-profile-icon fa-2x">
@@ -26,30 +41,36 @@
                 <div><li><a href = "#"><i class="fa fa-solid fa-question-circle fa-2x kb-icon"></i><br>Help</a></li></div>         
             </ul>
         </div>
-        <div class="col-2 kb-no-left-padding">
-            <ul class = "kb-sidebar">
-                <li class = ""><a href="">Notifications</a></li>
-                <li class = "kb-active"><a href="index.html">Profile</a></li>
-                <li class = ""><a href="">Files</a></li>
-                <li class = ""><a href="">Settings</a></li>
-                <li class = ""><a href="">ePortfolios</a></li>
-                <li class = ""><a href="">Shared Content</a></li>
-                <li class = ""><a href="">The Hub</a></li>
-                <li class = ""><a href="">Qwickly Course Tutorial</a></li>
-                <li class = ""><a href="">Global Announcements</a></li>
-            </ul>
+        <div class="col-12 col-md-11 ms-4">
+            <div class="row">
+                <div class="col-12 col-xl-11 pt-3">  
+                <i class="fa me-2 fa-solid fa-bars text-danger fa-lg"></i>
+                Ben Gardner's Profile
+                <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-2 d-none d-lg-block" >
+                    <ul class = "kb-sidebar">
+                        <li><a href="">Notifications</a></li>
+                        <li><a href="index.html" class = "kb-active">Profile</a></li>
+                        <li><a href="">Files</a></li>
+                        <li><a href="">Settings</a></li>
+                        <li><a href="">ePortfolios</a></li>
+                        <li><a href="">Shared Content</a></li>
+                        <li><a href="">The Hub</a></li>
+                        <li><a href="">Qwickly Course Tutorial</a></li>
+                        <li><a href="">Global Announcements</a></li>
+                    </ul>
         </div>
-        <div class="col-9">
-            <i class="fa fa-solid fa-bars"></i>
-            Ben Gardner's Profile
-            <hr>
-            <div class="float-start"></div>
-            <div class="float-end">
+        <div class="col-12 col-md-9">
+
+            <div class="float-end d-none d-md-block">
                 <form action="index.html">
                 <button type="submit" class = "btn btn-secondary kb-button-grey"><i class="fa fa-solid fa-pencil-alt fa-1x fa-flip-horizontal"></i>       Cancel Editing</button>
                 </form>
             </div>
-            <div class="col-4">
+            <div class="col-7">
             <i class="fa fa-user fa-6x kb-icon-padded"></i> <br>
             <label for="name">Name:* </label><br>
             <input type="text" id="name" value="Ben Gardner" class="form-control"/> <br>
@@ -61,19 +82,19 @@
             <option value="Other">Other</option> 
         </select> <br> 
         <label for="title">Title: </label><input type="text" class="form-control" id="title"> <br>
-        <h4>Contact</h4>
-        <textarea name="" id="" cols="30" rows="5">Email: gardner.b@northeastern.edu
+        <label for="contact"><h4>Contact</h4></label>
+        <textarea name="" id="contact" cols="30" rows="5" class="form-control">Email: gardner.b@northeastern.edu
         </textarea>
-        <br> <br>
-        <h4>Biography</h4>
-        <textarea name="" id="" cols="45" rows="5" class="form-control">CS Undergrad at Northeastern with a Software Concentration 
+        <br> 
+        <label for="bio"><h4>Biography</h4></label>
+        <textarea name="" id="bio" cols="45" rows="5" class="form-control">CS Undergrad at Northeastern with a Software Concentration 
 Interests: Music, Game Dev, Volleyball, Lego, Pokemon</textarea> <br>
         <h4>Links</h4>
         <div class="row">
             <div class="col-5">
-                <div class="container">
+                <div class="container w-100">
                 <h5>Title</h5>
-                <input type="text" value = "Lego Wish List "></div>
+                <input type="text" class = "form-control w-100" value = "Lego Wish List "></div>
         <button class="btn btn-secondary kb-button-grey kb-move-left">Add another link</button> 
             </div>
             <div class="col-2">
@@ -82,7 +103,7 @@ Interests: Music, Game Dev, Volleyball, Lego, Pokemon</textarea> <br>
             <div class="col-5">
                 <div class="container">
                 <h5>URL</h5>
-                <input type="text" width="20" value="https://www.lego.com/shared-wishlist/75074295-006b-4840-8ef3-01e198d0576a">
+                <input type="text" width="20" class = "form-control" value="https://www.lego.com/shared-wishlist/75074295-006b-4840-8ef3-01e198d0576a">
             </div>
         </div>
         </div>
@@ -95,6 +116,10 @@ Interests: Music, Game Dev, Volleyball, Lego, Pokemon</textarea> <br>
             <br>
             &nbsp;
         </div>
+        <form action="index.html" class="d-block d-md-block d-lg-none">
+            <button type="submit" class = "btn btn-secondary kb-button-grey"><i class="fa fa-solid fa-pencil-alt fa-1x fa-flip-horizontal"></i>       Cancel Editing</button>
+            </form>
+    </div>
     </div>
     </div>
 </body>
