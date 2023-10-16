@@ -3,32 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../../vendors/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../index.css" rel="stylesheet"/>
     <title>Document</title>
 </head>
 <body>
-    <table border="0" width="100%">
-        <tbody>
-            <trow>
-                <td valign="top"> 
-                    <ul>
-                        <li><a href = "../profile/index.html">Account</a></li>
-                        <li><a href = "#">Dashboard</a></li>
-                        <li><a href = "../home.html">Courses</a></li>
-                        <li><a href = "#">Calendar</a></li>
-                        <li><a href = "#">Inbox</a></li>
-                        <li><a href = "#">History</a></li>
-                        <li><a href = "#">Studio</a></li>
-                        <li><a href = "#">Commons</a></li>
-                        <li><a href = "#">Help</a></li>         
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul>
-                        <li><a href = "../home.html">Home</a></li>
+    <div class="row d-block d-md-block d-lg-none bg-dark">
+        <div class="col-12">
+            <a href="../kanbas_navigation/KanbasNavSmall.html" class="d-inline">
+            <button type="button" class="btn text-white ms-2">
+                <i class="fa fa-solid fa-bars"></i>
+            </button></a>
+            <div class="float-end">
+                <a href="../course_navigation/CourseNavSmall.html" class="d-inline">
+                    <button type="button" class="btn text-white ms-2">
+                        <i class="fa fa-solid fa-chevron-up"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-1 d-none d-xl-block kb-80-px-wide"> 
+            <ul class = "kb-black-sidebar pt-2">
+                <div> <img src="../../northeastern logo.png" width="75px"></div>
+                <div><li><a href = "../profile/index.html"><i class="fa fa-solid fa-user kb-profile-icon fa-2x">
+                    </i><br>Account</a></li> </div>
+                <div><li><a href = "../dashboard/index.html"><i class="fa fa-solid fa-weight fa-2x kb-icon"></i><br><span class = "kb-selected-link-text">Dashboard</span></a></li></div>
+                <div class="kb-selected-link"><li><a href = "../course_home/home.html"><i class="fa fa-solid fa-book fa-2x kb-icon"></i><br>Courses</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-regular fa-calendar fa-2x kb-icon"></i><br>Calendar</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-print fa-2x kb-icon"></i><br>Inbox</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-clock fa-2x kb-icon"></i><br>History</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-play-circle fa-2x kb-icon"></i><br>Studio</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-copyright fa-2x kb-icon"></i><br>Commons</a></li></div>
+                <div><li><a href = "#"><i class="fa fa-solid fa-question-circle fa-2x kb-icon"></i><br>Help</a></li></div>         
+            </ul>
+        </div>
+        <div class="col-12 col-md-11 ms-4">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="../course_home/home.html">CS4550 Fall 2023 Section 1</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                </ol>
+                </nav>
+            <div class="row">
+                <div class="col-1 kb-small-left-padding kb-padding-right d-none d-lg-block">
+                    <ul class="kb-sidebar">
+                        <li><a href = "../course_home/home.html">Home</a></li>
                         <li><a href = "#">Modules</a></li>
                         <li><a href = "#">Piazza</a></li>
                         <li><a href = "#">Zoom Meetings</a></li>
-                        <li><a href = "index.html">Assignments</a></li>
+                        <li><a href = "../assignments/index.html"  class="kb-active">Assignments</a></li>
                         <li><a href = "#">Quizzes</a></li>
                         <li><a href = "../grades_page/grades.html">Grades</a></li>
                         <li><a href = "#">People</a></li>
@@ -43,96 +69,277 @@
                         <li><a href = "#">Syllabus</a></li>
                         <li><a href = "#">Settings</a></li>
                     </ul>
-                </td>
-                <td valign="top">
-                    <input type = "text" placeholder= "Search for Assignments"/>
-                    <button type="button">Group</button>
-                    <button type="button">Assignment</button>
-                    <select><option value = "Edit Assignment Dates">Edit Assignment Dates</option></select>
+                    </div>
+                <div class="col-10">
+                    <input type = "text" placeholder= "Search for Assignments" class="w-25 form-control d-inline"/>
+                    <div class="float-end">
+                        <button type="button" class="btn kb-button-grey">+Group</button>
+                        <button type="button" class="btn btn-danger">+Assignment</button>
+                        <button type="button" class="btn kb-button-grey">
+                            <i class="fa fa-solid fa-ellipsis-v"></i>
+                        </button>
+                    </div>
                     <hr/>
-                    <h3>ASSIGNMENTS 40% of Total</h3> 
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move to...</option>
-                        <option>Send to...</option>
-                        <option>Copy to...</option>
-                        <option>Share to Commons</option>
-                    </select>
-                    <ul>
-                        <li><a href = "edit.html">A1 - ENV + HTML</a></br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">A2 - CSS + BOOTSTRAP</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">A3 - JS + REACT</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">A4 - STATE + REDUX</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">A5 - NODE + SESSION</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">A6 - MONGO + MONGOOSE</a> </br>
-                        <a href="#">Multiple Modules</a> | Not available yet</li>
+                    <ul class="list-group">
+                        <li class="list-group-item p-0">
+                        <h4 class="p-3 list-group-item-secondary mb-0"><i class="fa fa-solid fa-grip-vertical"></i> Assignments
+                            <div class="float-end"><span class="kb-rounded-corners d-inline p-2">40% of Total</span></div></h4> 
+                        <ul class="list-group kb-green-left-border">
+                            <li class = "list-group-item d-flex align-items-center">
+                                <div class="kb-box-5 align-items-center">
+                                    <i class="fa fa-solid fa-grip-vertical"></i>
+                                    <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                </div>
+                                <div class = "kb-box-90 ps-1">
+                                    <a href = "edit.html" class="text-dark fw-bold ps-1">A1 - ENV + HTML</a> <br>
+                                        <p class="mb-0 fs-6 fw-light ps-1">
+                                            Week 0 - Setup - Week Starting Monday September 5th <br>
+                                            Due Sep 18th, 2022 at 11:59pm | 100 pts
+                                    </p>
+                                </div>
+                                <div class="kb-box-5">
+                                    <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                    <i class="fa fa-solid fa-ellipsis-v"></i>
+                                </div>
+                            </li>
+                            <li class = "list-group-item d-flex align-items-center">
+                                <div class="kb-box-5 align-items-center">
+                                    <i class="fa fa-solid fa-grip-vertical"></i>
+                                    <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                </div>
+                                <div class = "kb-box-90 ps-1">
+                                    <a href = "edit.html" class="text-dark fw-bold ps-1">A2 - CSS + BOOTSTRAP</a> <br>
+                                        <p class="mb-0 fs-6 fw-light ps-1">
+                                            Week 1 - Setup - Week Starting Monday September 12th <br>
+                                            Due Sep 25th, 2022 at 11:59pm | 100 pts
+                                    </p>
+                                </div>
+                                <div class="kb-box-5">
+                                    <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                    <i class="fa fa-solid fa-ellipsis-v"></i>
+                                </div>
+                            </li>
+                            <li class = "list-group-item d-flex align-items-center">
+                                <div class="kb-box-5 align-items-center">
+                                    <i class="fa fa-solid fa-grip-vertical"></i>
+                                    <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                </div>
+                                <div class = "kb-box-90 ps-1">
+                                    <a href = "edit.html" class="text-dark fw-bold ps-1">A3 - JS + REACT</a> <br>
+                                        <p class="mb-0 fs-6 fw-light ps-1">
+                                            Week 2 - React - Week Starting Monday September 19th <br>
+                                            Due Oct 1st, 2022 at 11:59pm | 100 pts
+                                    </p>
+                                </div>
+                                <div class="kb-box-5">
+                                    <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                    <i class="fa fa-solid fa-ellipsis-v"></i>
+                                </div>
+                            </li>
+                            <li class = "list-group-item d-flex align-items-center">
+                                <div class="kb-box-5 align-items-center">
+                                    <i class="fa fa-solid fa-grip-vertical"></i>
+                                    <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                </div>
+                                <div class = "kb-box-90 ps-1">
+                                    <a href = "edit.html" class="text-dark fw-bold ps-1">A4 - STATE + REDUX</a> <br>
+                                        <p class="mb-0 fs-6 fw-light ps-1">
+                                            Week 3 - State - Week Starting Monday September 26th <br>
+                                            Due Oct 8th, 2022 at 11:59pm | 100 pts
+                                    </p>
+                                </div>
+                                <div class="kb-box-5">
+                                    <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                    <i class="fa fa-solid fa-ellipsis-v"></i>
+                                </div>
+                            </li>
+                            <li class = "list-group-item d-flex align-items-center">
+                                <div class="kb-box-5 align-items-center">
+                                    <i class="fa fa-solid fa-grip-vertical"></i>
+                                    <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                </div>
+                                <div class = "kb-box-90 ps-1">
+                                    <a href = "edit.html" class="text-dark fw-bold ps-1">A5 - NODE + SESSION</a> <br>
+                                        <p class="mb-0 fs-6 fw-light ps-1">
+                                            Week 0 - Node - Week Starting Monday October 2nd <br>
+                                            Due Oct 15th, 2022 at 11:59pm | 100 pts
+                                    </p>
+                                </div>
+                                <div class="kb-box-5">
+                                    <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                    <i class="fa fa-solid fa-ellipsis-v"></i>
+                                </div>
+                            </li>
+                            <li class = "list-group-item d-flex align-items-center">
+                                <div class="kb-box-5 align-items-center">
+                                    <i class="fa fa-solid fa-grip-vertical"></i>
+                                    <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                </div>
+                                <div class = "kb-box-90 ps-1">
+                                    <a href = "edit.html" class="text-dark fw-bold ps-1">A6 - MONGO + MONGOOSE</a> <br>
+                                        <p class="mb-0 fs-6 fw-light ps-1">
+                                            Week 0 - MONGO - Week Starting Monday October 7th <br>
+                                            Due Oct 22nd, 2022 at 11:59pm | 100 pts
+                                    </p>
+                                </div>
+                                <div class="kb-box-5">
+                                    <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                    <i class="fa fa-solid fa-ellipsis-v"></i>
+                                </div>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <h4 class="p-3 list-group-item-secondary mb-0"><i class="fa fa-solid fa-grip-vertical"></i> Quizzes
+                                <div class="float-end"><span class="kb-rounded-corners d-inline p-2">10% of Total</span></div></h4>                            
+                        <ul class="list-group kb-green-left-border">
+                            <li class = "list-group-item d-flex align-items-center">
+                                <div class="kb-box-5 align-items-center">
+                                    <i class="fa fa-solid fa-grip-vertical"></i>
+                                    <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                </div>
+                                <div class = "kb-box-90 ps-1">
+                                    <a href = "edit.html" class="text-dark fw-bold ps-1">Q1 - ENV + HTML</a> <br>
+                                        <p class="mb-0 fs-6 fw-light ps-1">
+                                            Due Sep 20th, 2022 at 11:59pm | 100 pts
+                                    </p>
+                                </div>
+                                <div class="kb-box-5">
+                                    <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                    <i class="fa fa-solid fa-ellipsis-v"></i>
+                                </div>
+                            </li>
+                            <li class = "list-group-item d-flex align-items-center">
+                                <div class="kb-box-5 align-items-center">
+                                    <i class="fa fa-solid fa-grip-vertical"></i>
+                                    <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                </div>
+                                <div class = "kb-box-90 ps-1">
+                                    <a href = "edit.html" class="text-dark fw-bold ps-1">Q2 - CSS</a> <br>
+                                        <p class="mb-0 fs-6 fw-light ps-1">
+                                            Due Sep 30th, 2022 at 11:59pm | 100 pts
+                                    </p>
+                                </div>
+                                <div class="kb-box-5">
+                                    <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                    <i class="fa fa-solid fa-ellipsis-v"></i>
+                                </div>
+                            </li>
+                            <li class = "list-group-item d-flex align-items-center">
+                                <div class="kb-box-5 align-items-center">
+                                    <i class="fa fa-solid fa-grip-vertical"></i>
+                                    <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                </div>
+                                <div class = "kb-box-90 ps-1">
+                                    <a href = "edit.html" class="text-dark fw-bold ps-1">Q3 - JS</a> <br>
+                                        <p class="mb-0 fs-6 fw-light ps-1">
+                                            Due Oct 10th, 2022 at 11:59pm | 100 pts
+                                    </p>
+                                </div>
+                                <div class="kb-box-5">
+                                    <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                    <i class="fa fa-solid fa-ellipsis-v"></i>
+                                </div>
+                            </li>
+                            <li class = "list-group-item d-flex align-items-center">
+                                <div class="kb-box-5 align-items-center">
+                                    <i class="fa fa-solid fa-grip-vertical"></i>
+                                    <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                </div>
+                                <div class = "kb-box-90 ps-1">
+                                    <a href = "edit.html" class="text-dark fw-bold ps-1">Q4 - NODE</a> <br>
+                                        <p class="mb-0 fs-6 fw-light ps-1">
+                                            Due Oct 20th, 2022 at 11:59pm | 100 pts
+                                    </p>
+                                </div>
+                                <div class="kb-box-5">
+                                    <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                    <i class="fa fa-solid fa-ellipsis-v"></i>
+                                </div>
+                            </li>
+                            <li class = "list-group-item d-flex align-items-center">
+                                <div class="kb-box-5 align-items-center">
+                                    <i class="fa fa-solid fa-grip-vertical"></i>
+                                    <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                </div>
+                                <div class = "kb-box-90 ps-1">
+                                    <a href = "edit.html" class="text-dark fw-bold ps-1">Q5 - Mongo</a> <br>
+                                        <p class="mb-0 fs-6 fw-light ps-1">
+                                            Due Oct 31st, 2022 at 11:59pm | 100 pts
+                                    </p>
+                                </div>
+                                <div class="kb-box-5">
+                                    <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                    <i class="fa fa-solid fa-ellipsis-v"></i>
+                                </div>
+                            </li>
+                            </ul>
+                            </li>
+                        <li class="list-group-item p-0">
+                            <h4 class="p-3 list-group-item-secondary mb-0"><i class="fa fa-solid fa-grip-vertical"></i> Exams
+                                <div class="float-end"><span class="kb-rounded-corners d-inline p-2">20% of Total</span></div></h4> 
+                            <ul class="list-group kb-green-left-border">
+                                <li class = "list-group-item d-flex align-items-center">
+                                    <div class="kb-box-5 align-items-center">
+                                        <i class="fa fa-solid fa-grip-vertical"></i>
+                                        <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                    </div>
+                                    <div class = "kb-box-90 ps-1">
+                                        <a href = "edit.html" class="text-dark fw-bold ps-1">Midterm</a> <br>
+                                            <p class="mb-0 fs-6 fw-light ps-1">
+                                                Due Oct 30th, 2022 at 11:59pm | 100 pts
+                                        </p>
+                                    </div>
+                                    <div class="kb-box-5">
+                                        <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                        <i class="fa fa-solid fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+                                <li class = "list-group-item d-flex align-items-center">
+                                    <div class="kb-box-5 align-items-center">
+                                        <i class="fa fa-solid fa-grip-vertical"></i>
+                                        <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                    </div>
+                                    <div class = "kb-box-90 ps-1">
+                                        <a href = "edit.html" class="text-dark fw-bold ps-1">Final</a> <br>
+                                            <p class="mb-0 fs-6 fw-light ps-1">
+                                                Due Dec 10th, 2022 at 11:59pm | 100 pts
+                                        </p>
+                                    </div>
+                                    <div class="kb-box-5">
+                                        <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                        <i class="fa fa-solid fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <h4 class="p-3 list-group-item-secondary mb-0"><i class="fa fa-solid fa-grip-vertical"></i> Project
+                                <div class="float-end"><span class="kb-rounded-corners d-inline p-2">30% of Total</span></div></h4> 
+                            <ul class="list-group kb-green-left-border">
+                                <li class = "list-group-item d-flex align-items-center">
+                                    <div class="kb-box-5 align-items-center">
+                                        <i class="fa fa-solid fa-grip-vertical"></i>
+                                        <i class="fa fa-solid fa-file text-success ps-3"></i>
+                                    </div>
+                                    <div class = "kb-box-90 ps-1">
+                                        <a href = "edit.html" class="text-dark fw-bold ps-1">Project</a> <br>
+                                            <p class="mb-0 fs-6 fw-light ps-1">
+                                                Due Dec 15th, 2022 at 11:59pm | 100 pts
+                                        </p>
+                                    </div>
+                                    <div class="kb-box-5">
+                                        <i class="fa fa-solid fa-check text-success pe-4"></i>
+                                        <i class="fa fa-solid fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
-                    <h3>QUIZZES 10% of Total</h3> 
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move to...</option>
-                        <option>Send to...</option>
-                        <option>Copy to...</option>
-                        <option>Share to Commons</option>
-                    </select>
-                    <ul>
-                        <li><a href = "edit.html">Q1 - HTML</a> </br>
-                        <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">Q2 - CSS</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">Q3 - JS, ES6</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">Q4 - NODE</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">Q5 - MONGO</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                    </ul>
-                    <h3>EXAMS 20% of Total</h3> 
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move to...</option>
-                        <option>Send to...</option>
-                        <option>Copy to...</option>
-                        <option>Share to Commons</option>
-                    </select>
-                    <ul>
-                        <li><a href = "edit.html">Midtern</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                        <li><a href = "edit.html">Final</a> </br>
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                    </ul>
-                    <h3>PROJECTS 30% of Total</h3> 
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move to...</option>
-                        <option>Send to...</option>
-                        <option>Copy to...</option>
-                        <option>Share to Commons</option>
-                    </select>
-                    <ul>
-                        <li><a href = "edit.html">Project</a> </br> 
-                            <a href="#">Multiple Modules</a> | Not available yet</li>
-                    </ul>
-                </td>
-            </trow>
-        </tbody>
-    </table>
+                </div>
+            </div>
+    </div>
+    </div>
+
 </body>
 </html>
