@@ -1,0 +1,309 @@
+.kb-list {
+    list-style: none;
+}
+
+.link-styling {
+    color: red;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.kb-active {
+    border-left: 2px solid;
+    border-left-color: black;
+    color: black;
+}
+
+.kb-active a {
+    color: black;
+    padding: 4px;
+}
+
+.kb-sidebar {
+    width: 195px;
+    padding-inline-start: 0px;
+}
+
+.kb-sidebar li {
+    padding: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+}
+
+.kb-vertical-padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.kb-heading {
+    text-decoration: none !important;
+    font-weight: normal;
+}
+
+
+body {
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    padding-inline-start: 0px;
+    height: 100vh;
+    text-decoration: none !important;
+}
+
+.kb-icon-padded {
+    padding: 10px
+}
+
+.kb-no-left-padding {
+    padding-left: none;
+    padding-inline-start: 0px;
+}
+
+.col-1 {
+    width: 100px
+}
+
+.kb-select {
+    max-width: 150px;
+}
+
+.kb-arrow {
+    text-align: center;
+    padding-left: 20%;
+    position: relative;
+    top: 37px;
+    left: 5px;
+}
+
+.kb-button-grey {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    max-width: 190px;
+}
+
+.kb-move-left {
+    position: relative;
+    left: 24px
+}
+
+.kb-black {
+    background-color: black;
+}
+
+.kb-button-red {
+    background-color: red;
+    color: white;
+}
+
+.kb-height-100 {
+    height: 100vh;
+}
+
+.custom-caret::before {
+    border-top: 0.3em solid black; /* Set caret color to black */
+}
+
+.kb-text-grey {
+    color: lightgray
+}
+
+.kb-background-grey {
+    background-color: lightgray;
+}
+
+.kb-no-left-margin {
+    margin-left: 0
+}
+
+.kb-card {
+    max-width: 260px;
+    height: 300px !important;
+    min-width: 260px !important;
+    margin: 30px;
+}
+
+.card-img-top {
+    width: 260px;
+    height: 100px;
+
+}
+
+.kb-course {
+    padding: 35px;
+    max-width: 1500px;
+}
+
+.kb-course a {
+    padding: 0px;
+}
+
+.kb-dashboard-container {
+    margin-right: 0px
+}
+
+.kb-padding-right {
+    padding-right: 50px;
+    margin-right: 50px;
+}
+
+.list-group-item-secondary > .list-group > .list-group-item {
+    background-color: rgb(238, 238, 238);
+}
+
+.kb-padded-list-item {
+    padding-left: 45px;
+}
+
+.kb-dropdown {
+    display: inline;
+    width: 150px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.kb-black-sidebar {
+    border-width: 200px;
+    border-color: red;
+    background-color: black;
+    width: 80px;
+    padding-left: 0px;
+    height: 100%;
+}
+
+.kb-black-sidebar i {
+    margin-top: 10px;
+}
+
+.kb-icon {
+    color: red;
+    margin: 7px;
+    position: relative;
+    right: 7px;
+}
+
+.kb-red {
+    color : red
+}
+
+.kb-profile-icon {
+    color: gray;
+    margin: 7px;
+    position: relative;
+    right: 7px;
+}
+
+.kb-black-sidebar div {
+    height: 75px;
+    border-color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    align-items: center;
+    font-size: small;
+    vertical-align: middle;
+    
+
+}
+
+.kb-black-sidebar a {
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+.kb-selected-link {
+    background-color: white;
+}
+.kb-selected-link a {
+    color: red;
+    width: 80px;
+}
+
+.kb-selected-link span {
+    position: relative;
+    left: 3px;
+}
+
+.kb-grey-list-item {
+    background-color: lightgray;
+}
+
+.kb-grey-list-item a {
+   color: black
+}
+
+.kb-inline {
+    display: inline;
+}
+
+.kb-small-button {
+    max-width: 100px;
+    height: 100px;
+}
+
+.list-group {
+    border-radius: 0px;
+}
+
+.list-group-item {
+    border-radius: 0px;
+}
+
+.kb-rounded-corners {
+    border-radius: 50px;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 70% !important
+}
+
+h4 p {
+    font-size: 70% !important
+}
+
+th {
+    font-weight: normal;
+}
+
+.kb-box-5 {
+    width:5%;
+    display: inline-block
+}
+
+.kb-box-90 {
+    width:89%;
+    display: inline-block
+}
+
+.kb-light-green {
+    color: #28a745;
+}
+
+.kb-green-left-border {
+    border-left: 3px solid #28a745;
+}
+
+.kb-fat-padding-r {
+    padding-right: 200px;
+}
+
+.inline-label-input {
+    display: inline-block;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.kb-thin-black-border-rounded {
+    border:1px solid lightgray;
+    border-radius: 10px;
+}
+
+.kb-80-px-wide {
+    width: 80px !important
+}
+
+.kb-breadcrumb {
+    --bs-breadcrumb-divider : '>';
+}
+
+nav {
+    display: inline;
+    height: 100px;
+}
