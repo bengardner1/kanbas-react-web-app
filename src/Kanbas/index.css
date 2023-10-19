@@ -8,6 +8,13 @@
     padding: 4px;
 }
 
+.link-styling-black {
+    color: black;
+    text-decoration: none;
+    padding: 4px;
+}
+
+
 .kb-active {
     border-left: 2px solid;
     border-left-color: black;
@@ -74,9 +81,10 @@ body {
 }
 
 .kb-button-grey {
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(238, 238, 238) !important;
     color: black;
     max-width: 190px;
+    margin-right: 3px;
 }
 
 .kb-move-left {
@@ -282,7 +290,7 @@ th {
 }
 
 .kb-fat-padding-r {
-    padding-right: 200px;
+    padding-right: 200px !important;
 }
 
 .inline-label-input {
@@ -306,4 +314,28 @@ th {
 nav {
     display: inline;
     height: 100px;
+}
+
+.kb-nudge-up {
+    position: relative;
+    bottom: 2px;
+}
+
+.kb-small-right-margin {
+    margin-right: 3px;
+}
+
+.kb-push-up {
+    position: relative;
+    bottom: 10px;
+}
+
+.kb-grey-link {
+    background-color: lightgray !important;
+}
+
+.kb-black-bold-link {
+    text-decoration: none;
+    text-decoration: bold;
+    color: black;
 }

@@ -9,7 +9,7 @@ import Courses from "./Courses";
 
 function Kanbas() {
     return(
-       <div className="row kb-height-100">
+       <div className="row">
           <KanbasNavigation/>
           <div className="col-12 col-md-11 ms-4">
             <Routes>
