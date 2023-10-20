@@ -339,3 +339,7 @@ nav {
     text-decoration: bold;
     color: black;
 }
+
+.kb-slight-rounded-corners {
+    border-radius: 10px;
+}

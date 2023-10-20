@@ -12,7 +12,7 @@ function ModuleList() {
         .filter((module) => module.course === courseId)
         .map((module, index) => (
             <div className="pb-6 mt-3">
-          <li key={index} className="list-group-item-secondary pt-3 m-2 pb-6">
+          <li key={index} className="list-group-item-secondary pt-3 m-2 pb-6 kb-slight-rounded-corners">
             <div className="d-flex align-items-center">
               <i className="p-2 pe-3 fa fa-solid fa-grip-vertical"></i>
               <div>
