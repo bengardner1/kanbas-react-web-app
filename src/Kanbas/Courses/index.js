@@ -10,18 +10,19 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   const pathSeg = pathname.split('/').pop()
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id.toString() === courseId.toString());
   return (
     <div>
         <div className="pt-2">
             <nav aria-label="breadcrumb" className="d-inline kb-breadcrumb">
                 <ol className="breadcrumb">
                     <li className="pb-2 pe-2 kb-nudge-up"><FaBars className="kb-red"/></li>
-                  <li className="breadcrumb-item"><Link className="link-styling" to={`/Kanbas/Courses/${courseId}/Home`}>{course.number} 
+                  <li className="breadcrumb-item"><Link className="link-styling" to={`/Kanbas/Courses/${courseId}/Home`}>
+                    {course.number} 
                   </Link></li>
                   <li className="breadcrumb-item">{pathSeg}</li>
                 </ol>

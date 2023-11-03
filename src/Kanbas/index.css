@@ -254,6 +254,7 @@ ul {
 
 .list-group-item {
     border-radius: 0px;
+    list-style: none;
 }
 
 .kb-rounded-corners {
@@ -342,4 +343,16 @@ nav {
 
 .kb-slight-rounded-corners {
     border-radius: 10px;
+}
+
+.kb-db-form {
+    width: 33%;
+}
+
+.kb-db-form input {
+    margin: 10px;
+}
+
+.kb-db-form button {
+    margin: 5px;
 }
