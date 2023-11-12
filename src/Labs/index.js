@@ -1,5 +1,7 @@
 import Assignment4 from "./a4";
 import Assignment5 from "./a5";
+import Nav from "../Nav";
+import Assignment3 from "./a3";
 import {Routes, Route, Navigate}
   from "react-router";
 import store from "./store";
