@@ -1,4 +1,5 @@
 import ModuleList from "./ModuleList";
+import modulesReducer from "./modulesReducer";
 
 function Modules() {
   return (
