@@ -15,7 +15,6 @@ import axios from "axios";
 function Kanbas() {
   const [courses, setCourses] = useState([]);
   const URL = "http://localhost:4000/api/courses";
-
   const [course, setCourse] =  useState({
     name: "New Course",      number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
@@ -48,7 +47,7 @@ function Kanbas() {
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
-          return response.data;
+          return course;
         }
         return c;
       })
