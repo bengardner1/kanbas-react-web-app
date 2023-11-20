@@ -8,7 +8,7 @@ import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import { React, useState, useEffect } from "react";
 import db from "./Database";
-import store from "../Labs/store";
+import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
 
