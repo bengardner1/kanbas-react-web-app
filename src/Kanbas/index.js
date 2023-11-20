@@ -14,7 +14,7 @@ import axios from "axios";
 
 function Kanbas() {
   const [courses, setCourses] = useState([]);
-  const URL = "http://localhost:4000/api/courses";
+  const URL = "https://bg-kanbas-node-server-app-d9dfae0193b7.herokuapp.com/api/courses";
   const [course, setCourse] =  useState({
     name: "New Course",      number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
