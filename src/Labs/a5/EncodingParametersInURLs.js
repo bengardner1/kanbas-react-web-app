@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 function EncodingParametersInURLs() {
+  const API_BASE = "https://bg-kanbas-node-server-app-d9dfae0193b7.herokuapp.com/a5/";
   const [a, setA] = useState(34);
   const [b, setB] = useState(23);
   const [result, setResult] = useState(0);
   const fetchSum = async (a, b) => {
     const response = await
-      axios.get(`http://localhost:4000/a5/add/${a}/${b}`);
+      axios.get(`${API_BASE}add/${a}/${b}`);
     setResult(response.data);
   };
   const fetchSubtraction = async (a, b) => {
     const response = await axios.get(
-      `http://localhost:4000/a5/subtract/${a}/${b}`);
+      `${API_BASE}subtract/${a}/${b}`);
     setResult(response.data);
   };
 
