@@ -6,7 +6,7 @@ import '../../vendors/css/bootstrap.min.css';
 import northeastern_logo from "../../northeasternlogo.png";
 
 function KanbasNavigation() {
-  const links = [{Name : "Account", Link : "Account", Iconclass : "fa-user kb-profile-icon"}, 
+  const links = [{Name : "Account", Link : "signin", Iconclass : "fa-user kb-profile-icon"}, 
                  {Name : "Dashboard", Link : "Dashboard", Iconclass: "fa-weight"},
                  {Name : "Courses", Link : "Courses", Iconclass: "fa-book"},
                  {Name : "Calendar", Link : "Calendar", Iconclass: "fa-calendar"},
